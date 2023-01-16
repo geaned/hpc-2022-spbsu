@@ -37,10 +37,10 @@
 В SSE есть, например, 128-битные регистры `xmm0`, `xmm1`. Пример их использования:
 ```c
 __asm {
-		movups xmm0, a;
-		movups xmm1, b;
-		mulps xmm0, xmm1;
-		movups a, xmm0;
+	movups xmm0, a;
+	movups xmm1, b;
+	mulps xmm0, xmm1;
+	movups a, xmm0;
 };
 ```
 
