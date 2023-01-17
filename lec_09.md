@@ -64,7 +64,7 @@ void inc_and_wait() {
 
 *В общем случае, если мы пишем на Java, RCU-техники особо не нужны из-за поведения сборщика мусора. Разве что если нужно конкретно реализовать логику того, что после удаления элемента из структуры, потоки-читатели гарантированно не будут с ним работать, то придется делать это самостоятельно.*
 
-## Flat-combining
+## [Flat-combining](https://storage.yandexcloud.net/lms-vault/private/1/courses/2019-spring/spb-hp-course/materials/flat-combining.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=YCAJEG-LFlOUp7t_VtjANSWBT%2F20230117%2Fru-central1-a%2Fs3%2Faws4_request&X-Amz-Date=20230117T185556Z&X-Amz-Expires=10&X-Amz-SignedHeaders=host&X-Amz-Signature=7c7782d4caea5d32c157ba9fe22944ccccc515beb980a2ba78b07fe163b80f32)
 
 Пусть у нас есть потокоопасная структура данных. На пятой лекции мы уже познакомились с тем, какими способами можно добавить потокобезопасность в структуру, но бывает так, что она очень сложная, а грубой синхронизации недостаточно по производительности.
 
