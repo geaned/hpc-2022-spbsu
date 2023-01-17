@@ -66,7 +66,7 @@
 Лекция 11:
 
 - OpenMP
-- TBB
+- TBB, аллокаторы, parallel pipeline
 - Консенсус
 
 Лекция 12:
